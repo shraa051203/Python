@@ -167,15 +167,118 @@
 ##print(sum)
 
 #######################################
+# string reverse inplace
+
+##def reversearray(nums):
+##    start=0
+##    end=len(nums)-1
+##
+##    while start< end:
+##        arr[start], arr[end]=arr[end], arr[start]
+##        start+=1
+##        end-=1
+##
+##    return arr
+##arr=[3,9,9,67,46]
+##print(reversearray(arr))
+
+##arr=[4,5,6,7,8,9,34]
+##arr.reverse()
+##print(arr)
+
+##########################################
+##find max, min 
+
+##arr=[2,3,4,1,88,45,90,8]
+##
+##max=arr[0]
+##min=arr[0]
+##for i in range(len(arr)):
+##    if arr[i]>max:
+##        max=arr[i]
+##    if arr[i]<min:
+##        min=arr[i]
+##
+##
+##print("max:",max,"min:" ,min)
 
 
+######################################
+
+#reverse string
+##name="shraddha"
+##rev=""
+##for i in range(len(name)):
+##    rev=name[i]+rev
+##
+##print(rev)
+
+#############################################
+#find duplicate elements
+
+##list=[1,4,5,6,74,5,6,4,55,74]
+##present=[]
+##duplicates=[]
+##
+##for i in list:
+##    if i in present and i not in duplicates:
+##        duplicates.append(i)
+##    else:
+##        present.append(i)
+##
+##print("Duplicate elements", duplicates)
+
+##############################################
+#check palindrome
+##num=12321
+##rev=0
+##i=num
+##
+##while i>0:
+##    l_digit=i%10
+##    rev=rev*10+l_digit
+##    i=i//10
+##
+##if rev==num:
+##    print("palindrome")
+##else:
+##    print("Not Palindrome")
 
 
+#string palindrom
+##name="shraarhs"
+##rev=""
+##for i in range(len(name)):
+##    rev=name[i]+rev
+##
+##if rev==name:
+##    print("Palindrome")
+##else:
+##    print("Not Palindrome")
 
 
+##############################################
 
+#fibbonacci series
+##n=10
+##a,b=0,1
+##
+##for i in range(n):
+##    print(a, end=" ")
+##    a,b=b, a+b
 
+#############################################
+#find missing number
+lst=[0,2,4,1,5]
 
+n=len(lst)
+
+expected_sum=n*(n+1) //2
+actual_sum=sum(lst)
+
+missing=expected_sum - actual_sum
+print(missing)
+    
 
 
 
